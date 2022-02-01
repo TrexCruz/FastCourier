@@ -6,7 +6,7 @@ if (!isset($_SERVER['HTTP_X_REQUESTED_WITH']) OR strtolower($_SERVER['HTTP_X_REQ
 }
 else{
 
-$secret = "6Ldi8CsUAAAAAEV5SjdsYqXtnu2iyiVwbU5dswUr";
+$secret = "6LdfbE0eAAAAAH_C81x0GcsXE7TatYHU2rL9XlZ5";
     $response = $_REQUEST["captcha"];
     $verify = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secret}&response={$response}");
     $captcha_success = json_decode($verify);
